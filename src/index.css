@@ -23,6 +23,11 @@ body {
 
 nav {
   background-color: var(--color-primary);
+  height: 3.5rem;
+}
+
+#logo-nav {
+  width: 3rem;
 }
 
 a {
