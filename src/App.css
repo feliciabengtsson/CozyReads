@@ -8,15 +8,3 @@
   width: 3rem;
 }
 
-.background-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-}
-
-#background-logo {
-  width: 50%;
-  border-radius: 50%;
-  opacity: 40%;
-}

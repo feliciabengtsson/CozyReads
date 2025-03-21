@@ -1,3 +1,13 @@
+import styled from 'styled-components'
+import BackgroundImage from "../public/logo1.webp"
+
+const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+`
+
 function NavigationTop() {
   
   return (
