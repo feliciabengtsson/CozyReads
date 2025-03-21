@@ -1,25 +1,33 @@
 import styled from 'styled-components'
-import BackgroundImage from "../public/logo1.webp"
+import LogoImg from "/logo1.webp"
 
-const Div = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
+const NavTop = styled.nav`
+	background-color: var(--color-primary);
+	height: 3.5rem;
+`
+
+const NavDivTop = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+`
+
+const Logo = styled.img`
+	width: 3rem;
 `
 
 function NavigationTop() {
   
   return (
 	<> 
-		<nav>
-			<div className="nav-links">
-				<a href="/"><img id="logo-nav" src="/logo.webp" alt="logo" /></a>
+		<NavTop>
+			<NavDivTop>
+				<a href="/"><Logo src={LogoImg} alt="logo" /></a>
 				<a href="#"><span className="material-symbols-outlined">search</span></a>
-				<a href="#"><span></span></a>
-				<a href="#"><span></span></a>
-			</div>
-		</nav>
+				<a href="#"><span className="material-symbols-outlined">help</span></a>
+				<a href="#"><span className="material-symbols-outlined">logout</span></a>
+			</NavDivTop>
+		</NavTop>
 	</>  
   )
 }

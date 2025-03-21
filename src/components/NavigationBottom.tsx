@@ -1,13 +1,23 @@
+import styled from 'styled-components'
+
+const NavFooter = styled.nav`
+	background-color: var(--color-primary);
+	height: 3.5rem;
+	margin-top: auto;
+`
+
 function NavigationBottom() {
   
 	return (
 	  <> 
-		  <div id="footer">
+		  <NavFooter>
 			  <div className="nav-links-bottom">
-				  <a href="#"><span></span></a>
-				  <a href="#"><span></span></a>
+			  		<a href="#"><span className="material-symbols-outlined">group</span></a>
+				  <a href="/"><span className="material-symbols-outlined">home</span></a>
+				  <a href="#"><span className="material-symbols-outlined">library_books</span></a>
+				  <a href="#"><span className="material-symbols-outlined">account_circle</span></a>
 			  </div>
-		  </div>
+		  </NavFooter>
 	  </>  
 	)
   }
