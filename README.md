@@ -2,7 +2,7 @@ För G ska följande krav uppfyllas:
 
 [] - Webbanrop görs via useEffect och information från en eller flera webbtjänster visas upp. Använd inte Cities-tjänsten; Det går bra att hämta från en lokal JSON-fil istället för en extern webbtjänst.
 
-[] - Använd { och } likt hur {{ och }} skulle ha använts i Vue.js.
+[x] - Använd { och } likt hur {{ och }} skulle ha använts i Vue.js.
 
 [] - Använd { och } likt hur v-bind/: skulle ha använts i Vue.js (key-props (relaterade till map) räknas inte).
 
@@ -18,13 +18,13 @@ För G ska följande krav uppfyllas:
 
 [] - En Single Page Application, bestående av minst två webbsidor, ska skapas med React Router eller liknande.
 
-[] - Använd komponenter.
+[x] - Använd komponenter.
 
 [] - Använd props.
 
 [] - Använd TypeScript och TSX. Varken JavaScript eller JSX får inte användas.
 
-[] - favicon
+[x] - favicon
 
 
 

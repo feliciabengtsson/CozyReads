@@ -1,9 +1,13 @@
 import styled from 'styled-components'
 import GlobalStyle from './globalStyles'
+import { Fragment } from 'react/jsx-runtime'
+
+import { createHashRouter, Link, Outlet, RouterProvider } from 'react-router-dom'
+
 import NavigationTop from "./components/NavigationTop"
 import NavigationBottom from "./components/NavigationBottom"
 import BackgroundImage from "../public/logo1.webp"
-import { Fragment } from 'react/jsx-runtime'
+import Startview from './pages/StartView'
 
 const Div = styled.div`
   display: flex;
@@ -20,16 +24,32 @@ const Img = styled.img`
 
 function App() {
 
-  return (
-    <Fragment>
-      <GlobalStyle /> 
-      <NavigationTop /> 
-      <Div>
-        <Img src={BackgroundImage} alt="Logo" />
-      </Div>
-      <NavigationBottom />
-    </Fragment>
-  )
+  const router = createHashRouter([
+    {
+      children: [
+        { element: <Startview />, path: '/' },
+      ],
+      element: (
+        <Fragment>
+          <GlobalStyle /> 
+          
+          <Link to="/">Hem</Link>
+          
+          <NavigationTop /> 
+          <Div>
+            <Img src={BackgroundImage} alt="Logo" />
+          </Div>
+          <NavigationBottom />
+
+          <main>
+            <Outlet />
+          </main>
+        </Fragment>
+      )
+    }
+  ])
+
+  return <RouterProvider router={router} />
 }
 
 export default App
