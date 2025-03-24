@@ -1,22 +1,32 @@
 import { Link } from 'react-router-dom'
 
 import styled from 'styled-components'
-import LogoImg from "/logo1.webp"
+import LogoImg from "/logonew.webp"
 import { Fragment } from 'react/jsx-runtime'
 
 const NavTop = styled.nav`
 	background-color: var(--color-primary);
 	height: 3.5rem;
 `
-
 const NavDivTop = styled.div`
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
+	height: 3.5rem;
 `
-
+const LogoDiv = styled.div`
+	margin: 0 0.5rem;
+`
 const Logo = styled.img`
 	width: 3rem;
+`
+const IconList = styled.ul`
+	display: flex;
+	list-style: none;
+	
+`
+const Li = styled.li`
+	margin: 0 .8rem;
 `
 
 function NavigationTop() {
@@ -25,10 +35,20 @@ function NavigationTop() {
 	<Fragment> 
 		<NavTop>
 			<NavDivTop>
-				<Link to="/"><Logo src={LogoImg} alt="logo" /></Link>
-				<Link to="/"><span className="material-symbols-outlined">search</span></Link>
-				<Link to="/"><span className="material-symbols-outlined">help</span></Link>
-				<Link to="/"><span className="material-symbols-outlined">logout</span></Link>
+				<LogoDiv>
+					<Link to="/"><Logo src={LogoImg} alt="logo" /></Link>
+				</LogoDiv>
+				<IconList>
+					<Li>
+						<Link to="/"><span className="material-symbols-outlined">search</span></Link>
+					</Li>
+					<Li>
+						<Link to="/"><span className="material-symbols-outlined">help</span></Link>
+					</Li>
+					<Li>
+						<Link to="/"><span className="material-symbols-outlined">logout</span></Link>
+					</Li>
+				</IconList>
 			</NavDivTop>
 		</NavTop>
 	</Fragment>  

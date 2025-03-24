@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 	:root {
-	--color-neutral-light: white;
-	--color-neutral-dark: black;
+	--color-neutral-light: rgba(255, 255, 255, 0.904);
+	--color-neutral-dark: rgba(0, 0, 0, 0.897);
 	
 	--color-background: #F5F1E7;
 	--color-secondary: #8B5E3C;
@@ -23,24 +23,30 @@ const GlobalStyle = createGlobalStyle`
 		font-style: normal;
 	}
 	h1 {
-		color: var(--Secondary, #69472D);
+		color: var(--color-secondary);
 		font-size: 36px;
 		font-weight: 400;
 	}
 	h2 {
-		color: var(--Secondary, #69472D);
+		color: var(--color-secondary);
 		font-size: 24px;
 		font-weight: 400;
 	}
 	h3 {
-		color: var(--Color-dark, rgba(30, 30, 30, 0.90));
+		color: var(--color-neutral-dark);
 		font-size: 16px;
 		font-weight: 600;
 	}
 	p {
-		color: var(--Color-dark, rgba(30, 30, 30, 0.90));
+		color: var(--color-neutral-dark);
 		font-size: 16px;
-				font-weight: 400;
+		font-weight: 400;
+	}
+	span {
+		color: var(--color-neutral-light);
+		&:hover {
+			color: var(--color-accent) !important;
+		} 
 	}
 `;
  

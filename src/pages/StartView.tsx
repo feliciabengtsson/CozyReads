@@ -2,8 +2,13 @@ import styled from 'styled-components'
 import { Fragment } from 'react/jsx-runtime'
 import BannerImg from '../assets/images/banner.jpg'
 
+const ImgWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 const Img = styled.img`
-  width: 100%;
+  width: 100vw;
   height: 150px;
 `
 
@@ -19,7 +24,9 @@ function Startview() {
 					yourself a cup of tea, and let's dive into magical 
 					stories together!
 				</p>
-				<Img src={BannerImg} alt="Logo" />
+				<ImgWrapper>
+					<Img src={BannerImg} alt="Logo" />
+				</ImgWrapper>
 			</section>
 			<section id='about'>
 				<h2>About us</h2>

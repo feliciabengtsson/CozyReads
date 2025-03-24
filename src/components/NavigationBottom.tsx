@@ -8,12 +8,13 @@ const NavFooter = styled.nav`
 	margin-top: auto;
 	position: fixed;
 	bottom: 0;
-	width: 100%
+	width: 100%;
 `
 const DivFooter = styled.div`
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
+	height: 3.5rem;
 `
 
 function NavigationBottom() {
