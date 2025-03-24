@@ -16,7 +16,7 @@ För G ska följande krav uppfyllas:
 
 [] - Använd events likt hur v-on/@ skulle ha använts i Vue.js.
 
-[] - En Single Page Application, bestående av minst två webbsidor, ska skapas med React Router eller liknande.
+[x] - En Single Page Application, bestående av minst två webbsidor, ska skapas med React Router eller liknande.
 
 [x] - Använd komponenter.
 
@@ -32,7 +32,7 @@ För VG ska kraven för G vara uppfyllda. Dessutom ska följande krav uppfyllas:
 
 [] - Använd useContext eller liknande för (viss) tillståndshantering. Värden ska både kunde sättas och hämtas.
 
-[] - Använd styled-components eller liknande (en CSS-in-JS-lösning) för stilsättning.
+[x] - Använd styled-components eller liknande (en CSS-in-JS-lösning) för stilsättning.
 
 [] - Låt en komponent anpassas efter ett adressparametervärde.
 
