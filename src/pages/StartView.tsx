@@ -3,9 +3,8 @@ import { Fragment } from 'react/jsx-runtime'
 import BannerImg from '../assets/images/banner.jpg'
 
 const Img = styled.img`
-  width: 50%;
-  border-radius: 50%;
-  opacity: 40%;
+  width: 100%;
+  height: 150px;
 `
 
 function Startview() {

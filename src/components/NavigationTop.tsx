@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom'
+
 import styled from 'styled-components'
 import LogoImg from "/logo1.webp"
+import { Fragment } from 'react/jsx-runtime'
 
 const NavTop = styled.nav`
 	background-color: var(--color-primary);
@@ -19,16 +22,16 @@ const Logo = styled.img`
 function NavigationTop() {
   
   return (
-	<> 
+	<Fragment> 
 		<NavTop>
 			<NavDivTop>
-				<a href="/"><Logo src={LogoImg} alt="logo" /></a>
-				<a href="#"><span className="material-symbols-outlined">search</span></a>
-				<a href="#"><span className="material-symbols-outlined">help</span></a>
-				<a href="#"><span className="material-symbols-outlined">logout</span></a>
+				<Link to="/"><Logo src={LogoImg} alt="logo" /></Link>
+				<Link to="/"><span className="material-symbols-outlined">search</span></Link>
+				<Link to="/"><span className="material-symbols-outlined">help</span></Link>
+				<Link to="/"><span className="material-symbols-outlined">logout</span></Link>
 			</NavDivTop>
 		</NavTop>
-	</>  
+	</Fragment>  
   )
 }
 

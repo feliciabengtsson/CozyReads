@@ -1,24 +1,34 @@
+import { Link } from 'react-router-dom'
+import { Fragment } from 'react/jsx-runtime'
 import styled from 'styled-components'
 
 const NavFooter = styled.nav`
 	background-color: var(--color-primary);
 	height: 3.5rem;
 	margin-top: auto;
+	position: fixed;
+	bottom: 0;
+	width: 100%
+`
+const DivFooter = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 `
 
 function NavigationBottom() {
   
 	return (
-	  <> 
+	  <Fragment> 
 		  <NavFooter>
-			  <div className="nav-links-bottom">
-			  		<a href="#"><span className="material-symbols-outlined">group</span></a>
-				  <a href="/"><span className="material-symbols-outlined">home</span></a>
-				  <a href="#"><span className="material-symbols-outlined">library_books</span></a>
-				  <a href="#"><span className="material-symbols-outlined">account_circle</span></a>
-			  </div>
+			  <DivFooter>
+					<Link to="bookcircles"><span className="material-symbols-outlined">group</span></Link>
+					<Link to="/"><span className="material-symbols-outlined">home</span></Link>
+					<Link to="books"><span className="material-symbols-outlined">library_books</span></Link>
+					<Link to="/"><span className="material-symbols-outlined">account_circle</span></Link>
+			  </DivFooter>
 		  </NavFooter>
-	  </>  
+	  </Fragment>  
 	)
   }
   
