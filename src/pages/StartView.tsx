@@ -9,7 +9,7 @@ const ImgWrapper = styled.div`
 `
 const Img = styled.img`
   width: 100vw;
-  height: 150px;
+  height: 10rem;
 `
 
 function Startview() {
