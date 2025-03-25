@@ -6,12 +6,13 @@ import MyBooksContext from '../MyBooksContext'
 
 function ProfileView() {
 	const [books, setBooks] = useState([])
+	
 	useEffect(() => {
 		fetch('/books.json')
 		.then((response) => response.json())
 		.then((result) => {
-			setBooks(result.slice(0, 2))
-			console.log(result, 'böcker')
+			setBooks(result.slice(0, 3))
+			console.log(result.slice(0, 2), 'böcker')
 		})
 	}, [])
 

@@ -1,11 +1,4 @@
-import styled from 'styled-components'
 import { Fragment } from 'react/jsx-runtime'
-
-const Img = styled.img`
-  width: 50%;
-  border-radius: 50%;
-  opacity: 40%;
-`
 
 function BookCirclesView() {
 

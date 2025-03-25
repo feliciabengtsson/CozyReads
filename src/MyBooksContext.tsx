@@ -1,5 +1,5 @@
 import { createContext } from 'react'
 
-const MyBooksContext = createContext(null);
+const MyBooksContext = createContext({});
 
 export default MyBooksContext
