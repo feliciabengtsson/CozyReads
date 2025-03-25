@@ -4,104 +4,119 @@
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "genre": "Classic Fiction",
-    "year": 1960
+    "year": 1960,
+    "cover_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
   },
   {
     "id": 2,
     "title": "1984",
     "author": "George Orwell",
     "genre": "Dystopian",
-    "year": 1949
+    "year": 1949,
+    "cover_url": "https://example.com/1984.jpg"
   },
   {
     "id": 3,
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "genre": "Fantasy",
-    "year": 1937
+    "year": 1937,
+    "cover_url": "https://example.com/the_hobbit.jpg"
   },
   {
     "id": 4,
     "title": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "genre": "Young Adult",
-    "year": 1951
+    "year": 1951,
+    "cover_url": "https://example.com/the_catcher_in_the_rye.jpg"
   },
   {
     "id": 5,
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "genre": "Romance",
-    "year": 1813
+    "year": 1813,
+    "cover_url": "https://example.com/pride_and_prejudice.jpg"
   },
   {
     "id": 6,
     "title": "Moby-Dick",
     "author": "Herman Melville",
     "genre": "Adventure",
-    "year": 1851
+    "year": 1851,
+    "cover_url": "https://example.com/moby_dick.jpg"
   },
   {
     "id": 7,
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "genre": "Classic Fiction",
-    "year": 1925
+    "year": 1925,
+    "cover_url": "https://example.com/the_great_gatsby.jpg"
   },
   {
     "id": 8,
     "title": "The Da Vinci Code",
     "author": "Dan Brown",
     "genre": "Thriller",
-    "year": 2003
+    "year": 2003,
+    "cover_url": "https://example.com/the_da_vinci_code.jpg"
   },
   {
     "id": 9,
     "title": "The Shining",
     "author": "Stephen King",
     "genre": "Horror",
-    "year": 1977
+    "year": 1977,
+    "cover_url": "https://example.com/the_shining.jpg"
   },
   {
     "id": 10,
     "title": "Dune",
     "author": "Frank Herbert",
     "genre": "Science Fiction",
-    "year": 1965
+    "year": 1965,
+    "cover_url": "https://example.com/dune.jpg"
   },
   {
     "id": 11,
     "title": "The Alchemist",
     "author": "Paulo Coelho",
     "genre": "Philosophical Fiction",
-    "year": 1988
+    "year": 1988,
+    "cover_url": "https://example.com/the_alchemist.jpg"
   },
   {
     "id": 12,
     "title": "Brave New World",
     "author": "Aldous Huxley",
     "genre": "Dystopian",
-    "year": 1932
+    "year": 1932,
+    "cover_url": "https://example.com/brave_new_world.jpg"
   },
   {
     "id": 13,
     "title": "The Road",
     "author": "Cormac McCarthy",
     "genre": "Post-Apocalyptic",
-    "year": 2006
+    "year": 2006,
+    "cover_url": "https://example.com/the_road.jpg"
   },
   {
     "id": 14,
     "title": "Sapiens: A Brief History of Humankind",
     "author": "Yuval Noah Harari",
     "genre": "Non-Fiction",
-    "year": 2011
+    "year": 2011,
+    "cover_url": "https://example.com/sapiens.jpg"
   },
   {
     "id": 15,
     "title": "Harry Potter and the Sorcerer's Stone",
     "author": "J.K. Rowling",
     "genre": "Fantasy",
-    "year": 1997
+    "year": 1997,
+    "cover_url": "https://example.com/harry_potter.jpg"
   }
 ]

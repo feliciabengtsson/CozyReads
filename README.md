@@ -1,18 +1,18 @@
 För G ska följande krav uppfyllas:
 
-[] - Webbanrop görs via useEffect och information från en eller flera webbtjänster visas upp. Använd inte Cities-tjänsten; Det går bra att hämta från en lokal JSON-fil istället för en extern webbtjänst.
+[x] - Webbanrop görs via useEffect och information från en eller flera webbtjänster visas upp. Använd inte Cities-tjänsten; Det går bra att hämta från en lokal JSON-fil istället för en extern webbtjänst.
 
 [x] - Använd { och } likt hur {{ och }} skulle ha använts i Vue.js.
 
-[] - Använd { och } likt hur v-bind/: skulle ha använts i Vue.js (key-props (relaterade till map) räknas inte).
+[x] - Använd { och } likt hur v-bind/: skulle ha använts i Vue.js (key-props (relaterade till map) räknas inte).
 
-[] - Använd useState likt hur data skulle ha använts i Vue.js.
+[x] - Använd useState likt hur data skulle ha använts i Vue.js.
 
-[] - Använd && likt hur v-if skulle ha använts i Vue.js, det vill säga för att styra om ett element visas eller inte.
+[x] - Använd && likt hur v-if skulle ha använts i Vue.js, det vill säga för att styra om ett element visas eller inte.
 
 [] - Använd conditional/ternery-operatorn (? och :) likt hur v-if och v-else skulle ha använts i Vue.js, det vill säga för att styra om ett element, eller ett annat element, visas.
 
-[] - Använd map och key likt hur v-for och key skulle ha använts i Vue.js.
+[x] - Använd map och key likt hur v-for och key skulle ha använts i Vue.js.
 
 [] - Använd events likt hur v-on/@ skulle ha använts i Vue.js.
 

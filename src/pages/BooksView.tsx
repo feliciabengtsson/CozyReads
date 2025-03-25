@@ -19,8 +19,13 @@ const BooksCard = styled.div`
 	margin: 10px auto;
 `
 const BookText = styled.p`
+	position: absolute;
 	font-size: .7rem;
 	text-align: center;
+`
+const BookCover = styled.img`
+	position: relative;
+	width: inherit;
 `
 
 function BooksView() {
@@ -51,6 +56,7 @@ function BooksView() {
 			{books && <BooksDiv>
 				{books.map((book) => (
 					<BooksCard key={book.id}>
+						<BookCover src={book.cover_url} alt="Book cover" />
 						<BookText>{book.title}</BookText>
 					</BooksCard>
 				))}
