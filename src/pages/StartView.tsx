@@ -11,6 +11,9 @@ const Img = styled.img`
   width: 100vw;
   height: 10rem;
 `
+const List = styled.ul`
+	list-style-type: "✔";
+`
 
 function Startview() {
 
@@ -37,12 +40,12 @@ function Startview() {
 					novels, or thrillers, there's a place for you here!
 				</p>
 				<p>Why join us?</p>
-				<ul>
-					<li>✔ Discover a new book every month</li>
-					<li>✔ Engage in discussions with fellow book lovers</li>
-					<li>✔ Get personalized book recommendations and reviews</li>
-					<li>✔ Find your reading community</li>
-				</ul>
+				<List>
+					<li>Discover a new book every month</li>
+					<li>Engage in discussions with fellow book lovers</li>
+					<li>Get personalized book recommendations and reviews</li>
+					<li>Find your reading community</li>
+				</List>
 			</section>
 		</div>
     </Fragment>

@@ -9,6 +9,7 @@ import NavigationBottom from "./components/NavigationBottom"
 import Startview from './pages/StartView'
 import BooksView from './pages/BooksView'
 import BookCirclesView from './pages/BookCirclesView'
+import ProfileView from './pages/ProfileView'
 
 const Div = styled.div`
   width: 300px;
@@ -16,7 +17,6 @@ const Div = styled.div`
 `
 
 function App() {
-
   return (
     <Fragment>
       <NavigationTop />
@@ -26,9 +26,10 @@ function App() {
           <Route path="/" element={<Startview />} />
           <Route path="books" element={<BooksView />} />
           <Route path="bookcircles" element={<BookCirclesView />} />
+          <Route path="profile" element={<ProfileView />} />
         </Routes>
       </Div>
-      
+
       <NavigationBottom />
       <GlobalStyle />
     </Fragment>
