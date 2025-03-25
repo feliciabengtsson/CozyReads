@@ -6,7 +6,6 @@ import { Routes, Route } from 'react-router-dom'
 
 import NavigationTop from "./components/NavigationTop"
 import NavigationBottom from "./components/NavigationBottom"
-
 import Startview from './pages/StartView'
 import BooksView from './pages/BooksView'
 import BookCirclesView from './pages/BookCirclesView'
