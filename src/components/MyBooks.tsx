@@ -18,14 +18,10 @@ const BooksCard = styled.div`
 	background-color: #f5f1e7c3;
 	margin: 10px auto;
 `
-const BookText = styled.p`
-	position: absolute;
-	font-size: .7rem;
-	text-align: center;
-`
 const BookCover = styled.img`
 	position: relative;
 	width: inherit;
+	height: inherit;
 `
 
 function SomeComponent() {
@@ -34,14 +30,14 @@ function SomeComponent() {
 	return (
 		<div>
 			<h3>My books:</h3>
-			{books && <BooksDiv>
+			{books ? <BooksDiv>
 				{books.map((book) => (
 					<BooksCard key={book.id}>
 						<BookCover src={book.cover_url} alt="Book cover" />
-						<BookText>{book.title}</BookText>
 					</BooksCard>
 				))}
-			</BooksDiv>}
+			</BooksDiv>
+			: <BooksDiv><p>You currently don't have any books.</p></BooksDiv>}
 		</div>
 	)
   }

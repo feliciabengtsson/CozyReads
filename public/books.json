@@ -1,92 +1,92 @@
 [
-  {
-    "id": 1,
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "genre": "Classic Fiction",
-    "year": 1960,
-    "cover_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
-    "summary": "En gripande berättelse om rasism och rättvisa i den amerikanska södern, sett genom ögonen på en ung flicka, Scout Finch."
-  },
-  {
-    "id": 2,
-    "title": "1984",
-    "author": "George Orwell",
-    "genre": "Dystopian",
-    "year": 1949,
-    "cover_url": "https://m.media-amazon.com/images/I/71rpa1-kyvL._SL1500_.jpg",
-    "summary": "En dystopisk framtid där Storebror övervakar allt och individens frihet är utplånad av totalitärt styre."
-  },
-  {
-    "id": 3,
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
-    "genre": "Fantasy",
-    "year": 1937,
-    "cover_url": "https://www.sfbok.se/sites/default/files/styles/1000x/sfbok/sfbokbilder/44/44328.jpg?bust=1190288257&itok=KuK0wPST",
-    "summary": "Bilbo Baggins ger sig ut på ett äventyr med dvärgar och trollkarlen Gandalf för att återta en skatt från en fruktansvärd drake."
-  },
-  {
-    "id": 4,
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "genre": "Young Adult",
-    "year": 1951,
-    "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg",
-    "summary": "Tonåringen Holden Caulfield kämpar med alienation och vuxenlivets absurditet i en berättelse om uppväxt och identitet."
-  },
-  {
-    "id": 5,
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "genre": "Romance",
-    "year": 1813,
-    "cover_url": "https://s3-ap-southeast-2.amazonaws.com/assets.allenandunwin.com/images/small/9780571337019.jpg",
-    "summary": "Elizabeth Bennet navigerar kärlek och samhällsnormer i en klassisk berättelse om romantik och stolthet."
-  },
-  {
-    "id": 6,
-    "title": "Moby-Dick",
-    "author": "Herman Melville",
-    "genre": "Adventure",
-    "year": 1851,
-    "cover_url": "https://bilder.akademibokhandeln.se/images_akb/9781681778488_383/moby-dick",
-    "summary": "Sjömannen Ishmael följer kapten Ahabs besatthet av att jaga den vita valen Moby Dick."
-  },
-  {
-    "id": 7,
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "genre": "Classic Fiction",
-    "year": 1925,
-    "cover_url": "https://image.bokus.com/images/9781853260414_200x_the-great-gatsby_haftad",
-    "summary": "En berättelse om kärlek, drömmar och dekadens i 1920-talets Amerika, sett genom Jay Gatsbys tragiska liv."
-  },
-  {
-    "id": 8,
-    "title": "The Da Vinci Code",
-    "author": "Dan Brown",
-    "genre": "Thriller",
-    "year": 2003,
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/DaVinciCode.jpg/220px-DaVinciCode.jpg",
-    "summary": "En actionfylld thriller där symbolforskaren Robert Langdon avslöjar religiösa mysterier och hemliga sällskap."
-  },
-  {
-    "id": 9,
-    "title": "The Shining",
-    "author": "Stephen King",
-    "genre": "Horror",
-    "year": 1977,
-    "cover_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/The_Shining_%281977%29_front_cover%2C_first_edition.jpg/250px-The_Shining_%281977%29_front_cover%2C_first_edition.jpg",
-    "summary": "En familj flyttar till ett ödsligt hotell där fadern långsamt blir galen av övernaturliga krafter."
-  },
-  {
-    "id": 10,
-    "title": "Dune",
-    "author": "Frank Herbert",
-    "genre": "Science Fiction",
-    "year": 1965,
-    "cover_url": "https://bilder.akademibokhandeln.se/images_akb/9780340960196_383/dune",
-    "summary": "Paul Atreides öde flätas samman med den ökenplanet där maktkamper och mystiska krafter styr universum."
-  }
+    {
+        "id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Classic Fiction",
+        "year": 1960,
+        "cover_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
+        "summary": "En gripande berättelse om rasism och rättvisa i den amerikanska södern, sett genom ögonen på en ung flicka, Scout Finch."
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "year": 1949,
+        "cover_url": "https://m.media-amazon.com/images/I/71rpa1-kyvL._SL1500_.jpg",
+        "summary": "En dystopisk framtid där Storebror övervakar allt och individens frihet är utplånad av totalitärt styre."
+    },
+    {
+        "id": 3,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "year": 1937,
+        "cover_url": "https://www.sfbok.se/sites/default/files/styles/1000x/sfbok/sfbokbilder/44/44328.jpg?bust=1190288257&itok=KuK0wPST",
+        "summary": "Bilbo Baggins ger sig ut på ett äventyr med dvärgar och trollkarlen Gandalf för att återta en skatt från en fruktansvärd drake."
+    },
+    {
+        "id": 4,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Young Adult",
+        "year": 1951,
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg",
+        "summary": "Tonåringen Holden Caulfield kämpar med alienation och vuxenlivets absurditet i en berättelse om uppväxt och identitet."
+    },
+    {
+        "id": 5,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "year": 1813,
+        "cover_url": "https://s3-ap-southeast-2.amazonaws.com/assets.allenandunwin.com/images/small/9780571337019.jpg",
+        "summary": "Elizabeth Bennet navigerar kärlek och samhällsnormer i en klassisk berättelse om romantik och stolthet."
+    },
+    {
+        "id": 6,
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "genre": "Adventure",
+        "year": 1851,
+        "cover_url": "https://bilder.akademibokhandeln.se/images_akb/9781681778488_383/moby-dick",
+        "summary": "Sjömannen Ishmael följer kapten Ahabs besatthet av att jaga den vita valen Moby Dick."
+    },
+    {
+        "id": 7,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Classic Fiction",
+        "year": 1925,
+        "cover_url": "https://image.bokus.com/images/9781853260414_200x_the-great-gatsby_haftad",
+        "summary": "En berättelse om kärlek, drömmar och dekadens i 1920-talets Amerika, sett genom Jay Gatsbys tragiska liv."
+    },
+    {
+        "id": 8,
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "genre": "Thriller",
+        "year": 2003,
+        "cover_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/DaVinciCode.jpg/220px-DaVinciCode.jpg",
+        "summary": "En actionfylld thriller där symbolforskaren Robert Langdon avslöjar religiösa mysterier och hemliga sällskap."
+    },
+    {
+        "id": 9,
+        "title": "The Shining",
+        "author": "Stephen King",
+        "genre": "Horror",
+        "year": 1977,
+        "cover_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/The_Shining_%281977%29_front_cover%2C_first_edition.jpg/250px-The_Shining_%281977%29_front_cover%2C_first_edition.jpg",
+        "summary": "En familj flyttar till ett ödsligt hotell där fadern långsamt blir galen av övernaturliga krafter."
+    },
+    {
+        "id": 10,
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "genre": "Science Fiction",
+        "year": 1965,
+        "cover_url": "https://bilder.akademibokhandeln.se/images_akb/9780340960196_383/dune",
+        "summary": "Paul Atreides öde flätas samman med den ökenplanet där maktkamper och mystiska krafter styr universum."
+    }
 ]

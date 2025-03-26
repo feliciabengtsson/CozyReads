@@ -11,8 +11,12 @@ const Img = styled.img`
   width: 100vw;
   height: 10rem;
 `
+const AboutTitle = styled.h2`
+  margin-bottom: 0;
+`
 const List = styled.ul`
 	list-style-type: "✔";
+	font-size: .8rem;
 `
 
 function Startview() {
@@ -32,7 +36,7 @@ function Startview() {
 				</ImgWrapper>
 			</section>
 			<section id='about'>
-				<h2>About us</h2>
+				<AboutTitle>About us</AboutTitle>
 				<h3>What is CozyReads?</h3>
 				<p>CozyReads is a warm and welcoming online book club where 
 					we share our love for books, discuss great reads, and find new 

@@ -10,7 +10,7 @@ För G ska följande krav uppfyllas:
 
 [x] - Använd && likt hur v-if skulle ha använts i Vue.js, det vill säga för att styra om ett element visas eller inte.
 
-[] - Använd conditional/ternery-operatorn (? och :) likt hur v-if och v-else skulle ha använts i Vue.js, det vill säga för att styra om ett element, eller ett annat element, visas.
+[x] - Använd conditional/ternery-operatorn (? och :) likt hur v-if och v-else skulle ha använts i Vue.js, det vill säga för att styra om ett element, eller ett annat element, visas.
 
 [x] - Använd map och key likt hur v-for och key skulle ha använts i Vue.js.
 
@@ -34,9 +34,9 @@ För VG ska kraven för G vara uppfyllda. Dessutom ska följande krav uppfyllas:
 
 [x] - Använd styled-components eller liknande (en CSS-in-JS-lösning) för stilsättning.
 
-[] - Låt en komponent anpassas efter ett adressparametervärde.
+[x] - Låt en komponent anpassas efter ett adressparametervärde.
 
-[] - Det finns en ESLint-konfiguration för projektet, som alla filer följer.
+[x] - Det finns en ESLint-konfiguration för projektet, som alla filer följer.
 
-[] - Alla filer är formaterade med Prettier eller liknande.
+[x] - Alla filer är formaterade med Prettier eller liknande.
 

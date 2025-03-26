@@ -1,7 +1,7 @@
 import { Fragment } from 'react/jsx-runtime'
 import { useEffect, useState } from 'react'
 
-import SomeComponent from '../components/SomeComponent'
+import SomeComponent from '../components/MyBooks'
 import MyBooksContext from '../MyBooksContext'
 
 function ProfileView() {
