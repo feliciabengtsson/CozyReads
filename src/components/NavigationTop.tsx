@@ -52,7 +52,7 @@ function NavigationTop() {
 				</IconList>
 			</NavDivTop>
 		</NavTop>
-		<HelpModal />
+		{/* <HelpModal /> */}
 	</Fragment>  
   )
 }
