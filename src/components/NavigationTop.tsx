@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoImg from "/logonew.webp"
 import { Fragment } from 'react/jsx-runtime'
+import HelpModal from './HelpModal'
 
 const NavTop = styled.nav`
 	background-color: var(--color-primary);
@@ -43,7 +44,7 @@ function NavigationTop() {
 						<Link to="/"><span className="material-symbols-outlined">search</span></Link>
 					</Li>
 					<Li>
-						<Link to="/"><span className="material-symbols-outlined">help</span></Link>
+						<span onClick={HelpModal} className="material-symbols-outlined">help</span>
 					</Li>
 					<Li>
 						<Link to="/"><span className="material-symbols-outlined">logout</span></Link>
@@ -51,6 +52,7 @@ function NavigationTop() {
 				</IconList>
 			</NavDivTop>
 		</NavTop>
+		<HelpModal />
 	</Fragment>  
   )
 }
