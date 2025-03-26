@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Fragment } from 'react/jsx-runtime'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const BooksDiv = styled.div`
 	display: grid;
@@ -11,21 +12,20 @@ const BooksDiv = styled.div`
 	margin: auto;
 	background-color: rgba(255, 255, 255, 0.90);
 	border-radius: 6px;
+	cursor: pointer; 
 `
 const BooksCard = styled.div`
+	position: relative;
+	text-align: center;
 	width: 5.5rem;
 	height: 7rem;
 	background-color: #f5f1e7c3;
 	margin: 10px auto;
 `
-const BookText = styled.p`
-	position: absolute;
-	font-size: .7rem;
-	text-align: center;
-`
 const BookCover = styled.img`
-	position: relative;
 	width: inherit;
+	height: inherit;
+	z-index: -1;
 `
 
 function BooksView() {
@@ -35,7 +35,7 @@ function BooksView() {
 		fetch('/books.json')
 		.then((response) => response.json())
 		.then((result) => {
-			setBooks(result.slice(0, 10))
+			setBooks(result.slice(0, 9))
 			console.log(result, 'böcker')
 		})
 	}, [])
@@ -55,15 +55,13 @@ function BooksView() {
 		<section>
 			{books && <BooksDiv>
 				{books.map((book) => (
-					<BooksCard key={book.id}>
+					<Link to={`/books/${book.id}`}><BooksCard key={book.id}>
 						<BookCover src={book.cover_url} alt="Book cover" />
-						<BookText>{book.title}</BookText>
-					</BooksCard>
+					</BooksCard></Link>
 				))}
 			</BooksDiv>}
 		</section>
     </Fragment>
   )
 }
-
 export default BooksView

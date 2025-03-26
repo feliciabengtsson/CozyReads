@@ -30,7 +30,7 @@ För G ska följande krav uppfyllas:
 
 För VG ska kraven för G vara uppfyllda. Dessutom ska följande krav uppfyllas:
 
-[] - Använd useContext eller liknande för (viss) tillståndshantering. Värden ska både kunde sättas och hämtas.
+[x] - Använd useContext eller liknande för (viss) tillståndshantering. Värden ska både kunde sättas och hämtas.
 
 [x] - Använd styled-components eller liknande (en CSS-in-JS-lösning) för stilsättning.
 

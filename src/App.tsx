@@ -10,6 +10,7 @@ import Startview from './pages/StartView'
 import BooksView from './pages/BooksView'
 import BookCirclesView from './pages/BookCirclesView'
 import ProfileView from './pages/ProfileView'
+import BookDetails from './pages/BookDetails'
 
 const Div = styled.div`
   width: 300px;
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Startview />} />
           <Route path="books" element={<BooksView />} />
+          <Route path="books/:id" element={<BookDetails />} />
           <Route path="bookcircles" element={<BookCirclesView />} />
           <Route path="profile" element={<ProfileView />} />
         </Routes>

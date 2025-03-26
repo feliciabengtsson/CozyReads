@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
 		color: var(--color-secondary);
 		font-size: 36px;
 		font-weight: 400;
+		margin: 10px auto;
 	}
 	h2 {
 		color: var(--color-secondary);
