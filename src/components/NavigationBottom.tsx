@@ -18,19 +18,18 @@ const DivFooter = styled.div`
 `
 
 function NavigationBottom() {
-  
+
 	return (
-	  <Fragment> 
+	  <Fragment>
 		  <NavFooter>
 			  <DivFooter>
 					<Link to="bookcircles"><span className="material-symbols-outlined">group</span></Link>
 					<Link to="/"><span className="material-symbols-outlined">home</span></Link>
 					<Link to="books"><span className="material-symbols-outlined">library_books</span></Link>
-					<Link to="profile"><span className="material-symbols-outlined">account_circle</span></Link>
 			  </DivFooter>
 		  </NavFooter>
-	  </Fragment>  
+	  </Fragment>
 	)
   }
-  
+
   export default NavigationBottom

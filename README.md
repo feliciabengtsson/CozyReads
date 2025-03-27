@@ -14,7 +14,7 @@ För G ska följande krav uppfyllas:
 
 [x] - Använd map och key likt hur v-for och key skulle ha använts i Vue.js.
 
-[] - Använd events likt hur v-on/@ skulle ha använts i Vue.js.
+[x] - Använd events likt hur v-on/@ skulle ha använts i Vue.js.
 
 [x] - En Single Page Application, bestående av minst två webbsidor, ska skapas med React Router eller liknande.
 
@@ -39,4 +39,3 @@ För VG ska kraven för G vara uppfyllda. Dessutom ska följande krav uppfyllas:
 [x] - Det finns en ESLint-konfiguration för projektet, som alla filer följer.
 
 [x] - Alla filer är formaterade med Prettier eller liknande.
-

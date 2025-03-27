@@ -23,10 +23,22 @@ const Genre = styled.span`
 	padding: .4rem;
 `
 
+interface BookType {
+	book: {
+		id: number;
+		title: string;
+		author: string;
+		genre: string;
+		year: number;
+		cover_url: string;
+		summary: string;
+	}
+}
+
 function BookDetails() {
 	const { id } = useParams()
 	const bookId = parseInt(id)
-	const [book, setBook] = useState([])
+	const [book, setBook] = useState<BookType["book"]>([])
 
 	useEffect(() => {
 		const selectedBook = booksDb.find((book) => book.id === bookId)
