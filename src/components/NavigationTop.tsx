@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import LogoImg from '/logonew.webp';
 import { Fragment } from 'react/jsx-runtime';
+import InfoModal from './InfoModal';
+import useModal from '../hooks/useModal';
 
 const NavTop = styled.nav`
     background-color: var(--color-primary);
@@ -26,9 +28,14 @@ const IconList = styled.ul`
 const Li = styled.li`
     margin: 0 0.8rem;
 `;
+const InfoModalIcon = styled.span`
+    cursor: pointer;
+`;
 
 function NavigationTop() {
-    return (
+    const { isOpen, toggle } = useModal();
+	
+	return (
         <Fragment>
             <NavTop>
                 <NavDivTop>
@@ -44,7 +51,7 @@ function NavigationTop() {
                             </Link>
                         </Li>
                         <Li>
-                            <span className="material-symbols-outlined">help</span>
+                            <InfoModalIcon onClick={toggle} className="material-symbols-outlined">help</InfoModalIcon>
                         </Li>
                         <Li>
                             <Link to="/">
@@ -55,7 +62,7 @@ function NavigationTop() {
                 </NavDivTop>
             </NavTop>
 
-            {/* Infomodal here */}
+            <InfoModal isOpen={isOpen} toggle={toggle} />
         </Fragment>
     );
 }

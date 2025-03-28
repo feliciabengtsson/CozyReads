@@ -59,7 +59,7 @@ function BooksView() {
         fetch('/books.json')
             .then((response) => response.json())
             .then((result) => {
-                setBooks(result.slice(0, 12));
+                setBooks(result.slice(0, 9));
                 console.log(result, 'hämtade böcker');
             });
     }, []);
@@ -105,6 +105,16 @@ function BooksView() {
                         </label>
                     </div>
                 </Form>
+            </section>
+            <section id="highlight">
+                <h3>📖 Book of the Month:</h3>
+                <p>The Invisible Library by Genevieve Cogman</p>
+                <p>
+                    Join us on an adventure through parallel worlds where a secret library
+                    collects unique books from different realities! Perfect for fans of fantasy
+                    and mystery.
+                </p>
+                <p>💬 Discussion Starts: 25th of each month</p>
             </section>
             <section>
                 {filteredBooks.length > 0 ? (
