@@ -6,7 +6,6 @@ const BooksDiv = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
-	width: 85vw;
 	height: fit-content;
 	margin: auto;
 	background-color: rgba(255, 255, 255, 0.90);
@@ -23,6 +22,18 @@ const BookCover = styled.img`
 	width: inherit;
 	height: inherit;
 `
+
+interface BookType {
+	book: {
+		id: number;
+		title: string;
+		author: string;
+		genre: string;
+		year: number;
+		cover_url: string;
+		summary: string;
+	}
+}
 
 function SomeComponent() {
 	const { books } = useContext(MyBooksContext)

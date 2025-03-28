@@ -1,10 +1,8 @@
-import styled from 'styled-components'
-
 function InfoModal() {
 
 	return (
         <div>
-                				<h3>How It Works:</h3>
+                <h3>How It Works:</h3>
 				<p>📅 Monthly Pick - Each month, we select a new book to
 					read together.
 				</p>

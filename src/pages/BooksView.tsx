@@ -3,33 +3,26 @@ import { Fragment } from 'react/jsx-runtime'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const SearchSection = styled.div`
+const Form = styled.form`
 	display: flex;
 	justify-content: space-between;
 	margin: 1rem auto;
+	input, select {
+		background-color: rgba(255, 255, 255, 0.90);
+		border: none;
+		border-radius: 15px;
+		padding: .5rem;
+	}
 `
-const InputField = styled.input`
-	border: none;
-	border-radius: 15px;
-	padding: .5rem;
-`
-/* const DropdownMenu = styled(InputField)`
-	border: none;
-	border-radius: 15px;
-	padding: .5rem;
-` */
 const BooksDiv = styled.div`
+	background-color: rgba(255, 255, 255, 0.90);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
-	gap: 10px;
-	width: 85vw;
-	min-width: 340px;
+	width: auto;
 	height: fit-content;
-	margin-inline: auto;
-	background-color: rgba(255, 255, 255, 0.90);
+	margin: auto;
 	border-radius: 6px;
-	cursor: pointer;
 `
 const BooksCard = styled.div`
 	width: 5.5rem;
@@ -38,9 +31,10 @@ const BooksCard = styled.div`
 	margin: 10px auto;
 `
 const BookCover = styled.img`
-	width: inherit;
-	height: inherit;
+	width: 5.5rem;
+	height: 7rem;
 	z-index: -1;
+	cursor: pointer;
 `
 
 interface BookType {
@@ -81,40 +75,42 @@ function BooksView() {
 
   return (
     <Fragment>
-		<SearchSection>
-			<div>
-				<InputField value={search} onChange={ onChangeHandler } type="text" name='filter-book' placeholder='Search for books' />
-			</div>
-			<div>
-				<label>
-					<select name="SelectedGenre" defaultValue="Genres">
-						<option value="Genres">Genres</option>
-						<option value="Classic Fiction">Classic Fiction</option>
-						<option value="Dystopian">Dystopian</option>
-						<option value="Fantasy">Fantasy</option>
-						<option value="Young Adult">Young Adult</option>
-						<option value="Romance">Romance</option>
-						<option value="Adventure">Adventure</option>
-						<option value="Thriller">Thriller</option>
-						<option value="Horror">Horror</option>
-						<option value="Science Fiction">Science Fiction</option>
-					</select>
-				</label>
-			</div>
-		</SearchSection>
+		<section>
+			<Form>
+				<div>
+					<input value={search} onChange={ onChangeHandler } type="text" name='filter-book' placeholder='Search for books' />
+				</div>
+				<div>
+					<label>
+						<select name="SelectedGenre" defaultValue="Genres">
+							<option value="Genres">Genres</option>
+							<option value="Classic Fiction">Classic Fiction</option>
+							<option value="Dystopian">Dystopian</option>
+							<option value="Fantasy">Fantasy</option>
+							<option value="Young Adult">Young Adult</option>
+							<option value="Romance">Romance</option>
+							<option value="Adventure">Adventure</option>
+							<option value="Thriller">Thriller</option>
+							<option value="Horror">Horror</option>
+							<option value="Science Fiction">Science Fiction</option>
+						</select>
+					</label>
+				</div>
+			</Form>
+		</section>
 		<section>
 			{books && filteredBooks ? <BooksDiv>
 				{books.map((book) => (
-					<Link key={book.id} to={`/books/${book.id}`}><BooksCard>
+					<BooksCard><Link key={book.id} to={`/books/${book.id}`}>
 						<BookCover src={book.cover_url} alt="Book cover" />
-					</BooksCard></Link>
+					</Link></BooksCard>
 				))}
 				</BooksDiv>
 			: 	<BooksDiv>
 					{filteredBooks.map((book) => (
-					<Link key={book.id} to={`/books/${book.id}`}><BooksCard>
+					<BooksCard><Link key={book.id} to={`/books/${book.id}`}>
 						<BookCover src={book.cover_url} alt="Book cover" />
-					</BooksCard></Link>
+					</Link></BooksCard>
 					))}
 				</BooksDiv>}
 		</section>
