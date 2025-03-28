@@ -4,24 +4,23 @@ import { useEffect, useState } from 'react'
 import MyBooksContext from '../MyBooksContext'
 import MyBooks from '../components/MyBooks'
 
-interface BookType {
-    book: {
-        id: number;
-        title: string;
-        author: string;
-        genre: string;
-        year: number;
-        cover_url: string;
-        summary: string;
-    };
+interface Book {
+	id: number;
+	title: string;
+	author: string;
+	genre: string;
+	year: number;
+	cover_url: string;
+	summary: string;
 }
+
 function ProfileView() {
-	const [books, setBooks] = useState<BookType['book']>([]);
+	const [books, setBooks] = useState<Book[]>([]);
 	
 	useEffect(() => {
 		fetch('/books.json')
 		.then((response) => response.json())
-		.then((result) => {
+		.then((result: Book[]) => {
 			setBooks(result.slice(0, 3))
 			console.log(result.slice(0, 2), 'böcker')
 		})
