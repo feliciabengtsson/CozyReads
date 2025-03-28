@@ -23,28 +23,36 @@ const Genre = styled.span`
 	padding: .4rem;
 `
 
-interface BookType {
-	book: {
-		id: number;
-		title: string;
-		author: string;
-		genre: string;
-		year: number;
-		cover_url: string;
-		summary: string;
-	}
+interface Book {
+	id: number;
+	title: string;
+	author: string;
+	genre: string;
+	year: number;
+	cover_url: string;
+	summary: string;
 }
 
 function BookDetails() {
 	const { id } = useParams()
-	const bookId = parseInt(id)
-	const [book, setBook] = useState<BookType["book"]>([])
-
+	const bookId = id ? parseInt(id) : undefined
+	const [book, setBook] = useState<Book>({id: 0,
+		title: '',
+		author: '',
+		genre: '',
+		year: 0,
+		cover_url: '',
+		summary: ''})
+	
 	useEffect(() => {
-		const selectedBook = booksDb.find((book) => book.id === bookId)
-		setBook(selectedBook)
+		if (bookId !== undefined)  {
+			const selectedBook = booksDb.find((book) => book.id === bookId)
+			if (selectedBook) {
+				setBook(selectedBook)
+			}
+		}
 		console.log(book, 'vald bok')
-	}, [])
+	}, [book, bookId])
 
   return (
     <Fragment>

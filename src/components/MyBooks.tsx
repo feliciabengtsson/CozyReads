@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { useContext } from 'react'
+import { Fragment, useContext } from 'react'
 import MyBooksContext from '../MyBooksContext'
 
 const BooksDiv = styled.div`
@@ -23,34 +23,24 @@ const BookCover = styled.img`
 	height: inherit;
 `
 
-interface BookType {
-	book: {
-		id: number;
-		title: string;
-		author: string;
-		genre: string;
-		year: number;
-		cover_url: string;
-		summary: string;
-	}
-}
-
-function SomeComponent() {
+function MyBooks() {
 	const { books } = useContext(MyBooksContext)
   
 	return (
-		<div>
-			<h3>My books:</h3>
-			{books ? <BooksDiv>
-				{books.map((book) => (
-					<BooksCard key={book.id}>
-						<BookCover src={book.cover_url} alt="Book cover" />
-					</BooksCard>
-				))}
-			</BooksDiv>
-			: <BooksDiv><p>You currently don't have any books.</p></BooksDiv>}
-		</div>
+		<Fragment>
+			<div>
+				<h3>My books:</h3>
+				{books ? <BooksDiv>
+					{books.map((book) => (
+						<BooksCard key={book.id}>
+							<BookCover src={book.cover_url} alt="Book cover" />
+						</BooksCard>
+					))}
+				</BooksDiv>
+				: <BooksDiv><p>You currently don't have any books.</p></BooksDiv>}
+			</div>
+		</Fragment>
 	)
   }
   
-  export default SomeComponent
+  export default MyBooks

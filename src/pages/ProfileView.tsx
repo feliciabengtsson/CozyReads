@@ -1,11 +1,22 @@
 import { Fragment } from 'react/jsx-runtime'
 import { useEffect, useState } from 'react'
 
-import SomeComponent from '../components/MyBooks'
 import MyBooksContext from '../MyBooksContext'
+import MyBooks from '../components/MyBooks'
 
+interface BookType {
+    book: {
+        id: number;
+        title: string;
+        author: string;
+        genre: string;
+        year: number;
+        cover_url: string;
+        summary: string;
+    };
+}
 function ProfileView() {
-	const [books, setBooks] = useState([])
+	const [books, setBooks] = useState<BookType['book']>([]);
 	
 	useEffect(() => {
 		fetch('/books.json')
@@ -19,7 +30,7 @@ function ProfileView() {
   return (
     <Fragment>
 		<MyBooksContext.Provider value={{ books, setBooks }}>
-			<SomeComponent />
+			<MyBooks />
 		</MyBooksContext.Provider>
     </Fragment>
   )
