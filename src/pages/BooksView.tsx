@@ -13,25 +13,25 @@ const InputField = styled.input`
 	border-radius: 15px;
 	padding: .5rem;
 `
-const DropdownMenu = styled(InputField)`
+/* const DropdownMenu = styled(InputField)`
 	border: none;
 	border-radius: 15px;
 	padding: .5rem;
-`
+` */
 const BooksDiv = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
+	gap: 10px;
 	width: 85vw;
+	min-width: 340px;
 	height: fit-content;
-	margin: auto;
+	margin-inline: auto;
 	background-color: rgba(255, 255, 255, 0.90);
 	border-radius: 6px;
 	cursor: pointer;
 `
 const BooksCard = styled.div`
-	position: relative;
-	text-align: center;
 	width: 5.5rem;
 	height: 7rem;
 	background-color: #f5f1e7c3;
@@ -64,8 +64,8 @@ function BooksView() {
 		fetch('/books.json')
 		.then((response) => response.json())
 		.then((result) => {
-			setBooks(result.slice(0, 9))
-			console.log(result, 'böcker')
+			setBooks(result.slice(0, 12))
+			console.log(result, 'hämtade böcker')
 		})
 	}, [])
 
@@ -86,22 +86,24 @@ function BooksView() {
 				<InputField value={search} onChange={ onChangeHandler } type="text" name='filter-book' placeholder='Search for books' />
 			</div>
 			<div>
-				<DropdownMenu>
-					<option value="1" selected>Genres</option>
-					<option value="Classic Fiction">Classic Fiction</option>
-					<option value="Dystopian">Dystopian</option>
-					<option value="Fantasy">Fantasy</option>
-					<option value="Young Adult">Young Adult</option>
-					<option value="Romance">Romance</option>
-					<option value="Adventure">Adventure</option>
-					<option value="Thriller">Thriller</option>
-					<option value="Horror">Horror</option>
-					<option value="Science Fiction">Science Fiction</option>
-				</DropdownMenu>
+				<label>
+					<select name="SelectedGenre" defaultValue="Genres">
+						<option value="Genres">Genres</option>
+						<option value="Classic Fiction">Classic Fiction</option>
+						<option value="Dystopian">Dystopian</option>
+						<option value="Fantasy">Fantasy</option>
+						<option value="Young Adult">Young Adult</option>
+						<option value="Romance">Romance</option>
+						<option value="Adventure">Adventure</option>
+						<option value="Thriller">Thriller</option>
+						<option value="Horror">Horror</option>
+						<option value="Science Fiction">Science Fiction</option>
+					</select>
+				</label>
 			</div>
 		</SearchSection>
 		<section>
-			{books && filteredBooks === '' ? <BooksDiv>
+			{books && filteredBooks ? <BooksDiv>
 				{books.map((book) => (
 					<Link key={book.id} to={`/books/${book.id}`}><BooksCard>
 						<BookCover src={book.cover_url} alt="Book cover" />

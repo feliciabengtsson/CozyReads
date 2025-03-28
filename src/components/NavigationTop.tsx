@@ -51,6 +51,8 @@ function NavigationTop() {
 				</IconList>
 			</NavDivTop>
 		</NavTop>
+
+		{/* Infomodal here */}
 	</Fragment>
   )
 }
