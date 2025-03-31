@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useEffect, useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import circlesDb from '../../public/circles.json'
+import circlesDb from '../../public/circles.json';
 import BookCirclesBanner from '../assets/images/bookbanner.jpg';
 
 const Header = styled.h2`
@@ -47,7 +47,7 @@ const CircleDiv = styled.div`
     width: fit-content;
     height: fit-content;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: .6rem;
+    padding: 0.6rem;
     border-radius: 6px;
 `;
 const CircleCard = styled.div`
@@ -85,10 +85,9 @@ function BookCirclesView() {
 
     useEffect(() => {
         setCircles(circlesDb.slice(0, 3));
-        console.log(circlesDb, 'klubb')
+        console.log(circlesDb, 'klubb');
     }, []);
-    
-    
+
     return (
         <Fragment>
             <div id="main-wrapper">

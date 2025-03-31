@@ -34,8 +34,8 @@ const InfoModalIcon = styled.span`
 
 function NavigationTop() {
     const { isOpen, toggle } = useModal();
-	
-	return (
+
+    return (
         <Fragment>
             <NavTop>
                 <NavDivTop>
@@ -51,7 +51,9 @@ function NavigationTop() {
                             </Link>
                         </Li>
                         <Li>
-                            <InfoModalIcon onClick={toggle} className="material-symbols-outlined">help</InfoModalIcon>
+                            <InfoModalIcon onClick={toggle} className="material-symbols-outlined">
+                                help
+                            </InfoModalIcon>
                         </Li>
                         <Li>
                             <Link to="/">

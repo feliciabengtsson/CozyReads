@@ -32,7 +32,7 @@ const BooksDiv = styled.div`
     width: fit-content;
     height: fit-content;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: .6rem;
+    padding: 0.6rem;
     border-radius: 6px;
     @media (min-width: 890px) {
         grid-template-columns: repeat(5, 1fr);
@@ -128,9 +128,8 @@ function BooksView() {
                 <h3>📖 Book of the Month:</h3>
                 <p>The Invisible Library by Genevieve Cogman</p>
                 <p>
-                    Join us on an adventure through parallel worlds where a secret library
-                    collects unique books from different realities! Perfect for fans of fantasy
-                    and mystery.
+                    Join us on an adventure through parallel worlds where a secret library collects
+                    unique books from different realities! Perfect for fans of fantasy and mystery.
                 </p>
                 <p>💬 Discussion Starts: 25th of each month</p>
             </section>

@@ -1,47 +1,47 @@
 [
-  {
-    "id": 1,
-    "name": "The Literary Enthusiasts",
-    "meetingSchedule": "First Monday of every month",
-    "currentlyReading": "Pride and Prejudice by Jane Austen",
-    "latestComment": "Loved the character development in this one!",
-    "nextMeetup": "April 8, 2025",
-    "image": "https://images.unsplash.com/photo-1694291395767-23698e6fe5df?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    "id": 2,
-    "name": "Sci-Fi Explorers",
-    "meetingSchedule": "Every second Wednesday",
-    "currentlyReading": "Dune by Frank Herbert",
-    "latestComment": "The world-building is incredible!",
-    "nextMeetup": "April 10, 2025",
-    "image": "https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?q=80&w=1285&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    "id": 3,
-    "name": "Mystery Lovers",
-    "meetingSchedule": "Last Friday of the month",
-    "currentlyReading": "Gone Girl by Gillian Flynn",
-    "latestComment": "Such an unpredictable plot twist!",
-    "nextMeetup": "April 26, 2025",
-    "image": "https://images.unsplash.com/photo-1697029749544-ffa7f15f9dd0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    "id": 4,
-    "name": "Fantasy Realm",
-    "meetingSchedule": "Every Sunday evening",
-    "currentlyReading": "The Hobbit by J.R.R. Tolkien",
-    "latestComment": "Bilbo’s journey is so captivating!",
-    "nextMeetup": "April 6, 2025",
-    "image": "https://images.unsplash.com/photo-1735042731477-ad80caed9bba?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    "id": 5,
-    "name": "Non-Fiction Thinkers",
-    "meetingSchedule": "Bi-weekly on Thursdays",
-    "currentlyReading": "Sapiens by Yuval Noah Harari",
-    "latestComment": "Really makes you rethink human history!",
-    "nextMeetup": "April 11, 2025",
-    "image": "https://images.unsplash.com/photo-1742867113796-510f600e777f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  }
+    {
+        "id": 1,
+        "name": "The Literary Enthusiasts",
+        "meetingSchedule": "First Monday of every month",
+        "currentlyReading": "Pride and Prejudice by Jane Austen",
+        "latestComment": "Loved the character development in this one!",
+        "nextMeetup": "April 8, 2025",
+        "image": "https://images.unsplash.com/photo-1694291395767-23698e6fe5df?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 2,
+        "name": "Sci-Fi Explorers",
+        "meetingSchedule": "Every second Wednesday",
+        "currentlyReading": "Dune by Frank Herbert",
+        "latestComment": "The world-building is incredible!",
+        "nextMeetup": "April 10, 2025",
+        "image": "https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?q=80&w=1285&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 3,
+        "name": "Mystery Lovers",
+        "meetingSchedule": "Last Friday of the month",
+        "currentlyReading": "Gone Girl by Gillian Flynn",
+        "latestComment": "Such an unpredictable plot twist!",
+        "nextMeetup": "April 26, 2025",
+        "image": "https://images.unsplash.com/photo-1697029749544-ffa7f15f9dd0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 4,
+        "name": "Fantasy Realm",
+        "meetingSchedule": "Every Sunday evening",
+        "currentlyReading": "The Hobbit by J.R.R. Tolkien",
+        "latestComment": "Bilbo’s journey is so captivating!",
+        "nextMeetup": "April 6, 2025",
+        "image": "https://images.unsplash.com/photo-1735042731477-ad80caed9bba?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 5,
+        "name": "Non-Fiction Thinkers",
+        "meetingSchedule": "Bi-weekly on Thursdays",
+        "currentlyReading": "Sapiens by Yuval Noah Harari",
+        "latestComment": "Really makes you rethink human history!",
+        "nextMeetup": "April 11, 2025",
+        "image": "https://images.unsplash.com/photo-1742867113796-510f600e777f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
 ]

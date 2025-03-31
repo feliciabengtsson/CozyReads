@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useEffect, useState, Fragment } from 'react';
 import { useParams } from 'react-router-dom';
-import circlesDb from '../../public/circles.json'
+import circlesDb from '../../public/circles.json';
 
 const CirclesHeader = styled.h2`
     margin-left: auto;
@@ -32,19 +32,18 @@ const ContentCard = styled.div`
     height: 4rem;
     margin-top: 20px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.90);
+    background: rgba(255, 255, 255, 0.9);
     vertical-align: center;
     @media (min-width: 890px) {
         width: 27rem;
-
     }
 `;
 const ContentHeader = styled.h3`
-    color:#69472D;
+    color: #69472d;
     margin-left: 1rem;
 `;
 const ContentSpan = styled.span`
-    color: rgba(30, 30, 30, 0.90);
+    color: rgba(30, 30, 30, 0.9);
     font-weight: 400;
     font-size: 14px;
 `;
@@ -69,7 +68,7 @@ function BookCirclesGroup() {
         currentlyReading: '',
         latestComment: '',
         nextMeetup: '',
-        image: '',
+        image: ''
     });
 
     useEffect(() => {
@@ -81,8 +80,7 @@ function BookCirclesGroup() {
         }
         console.log(circle, 'vald bok');
     }, [circle, circleId]);
-    
-    
+
     return (
         <Fragment>
             <CirclesHeader>{circle.name}</CirclesHeader>
@@ -91,16 +89,24 @@ function BookCirclesGroup() {
             </ImgWrapper>
             <ContentWrapper>
                 <ContentCard>
-                    <ContentHeader>Currently Reading: <ContentSpan>{circle.currentlyReading}</ContentSpan></ContentHeader>
+                    <ContentHeader>
+                        Currently Reading: <ContentSpan>{circle.currentlyReading}</ContentSpan>
+                    </ContentHeader>
                 </ContentCard>
                 <ContentCard>
-                    <ContentHeader>Discussion Forum: <ContentSpan>{circle.latestComment}</ContentSpan></ContentHeader>
+                    <ContentHeader>
+                        Discussion Forum: <ContentSpan>{circle.latestComment}</ContentSpan>
+                    </ContentHeader>
                 </ContentCard>
                 <ContentCard>
-                    <ContentHeader>Reading Schedule: <ContentSpan>{circle.meetingSchedule}</ContentSpan></ContentHeader>
+                    <ContentHeader>
+                        Reading Schedule: <ContentSpan>{circle.meetingSchedule}</ContentSpan>
+                    </ContentHeader>
                 </ContentCard>
                 <ContentCard>
-                    <ContentHeader>Next Meetup: <ContentSpan>{circle.nextMeetup}</ContentSpan></ContentHeader>
+                    <ContentHeader>
+                        Next Meetup: <ContentSpan>{circle.nextMeetup}</ContentSpan>
+                    </ContentHeader>
                 </ContentCard>
             </ContentWrapper>
         </Fragment>

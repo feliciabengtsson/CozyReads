@@ -19,7 +19,7 @@ const BooksDiv = styled.div`
     width: fit-content;
     height: fit-content;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: .6rem;
+    padding: 0.6rem;
     border-radius: 6px;
 `;
 const BooksCard = styled.div`
