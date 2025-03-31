@@ -2,25 +2,42 @@ import styled from 'styled-components';
 import { Fragment, useContext } from 'react';
 import MyBooksContext from '../MyBooksContext';
 
+const BookContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 890px) {
+        text-align: center;
+    }
+`;
 const BooksDiv = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    align-self: center;
+    width: fit-content;
     height: fit-content;
-    margin: auto;
     background-color: rgba(255, 255, 255, 0.9);
+    padding: .6rem;
     border-radius: 6px;
 `;
 const BooksCard = styled.div`
     width: 5.5rem;
     height: 7rem;
-    background-color: #f5f1e7c3;
-    margin: 10px auto;
+    margin: 0 5px;
+    @media (min-width: 890px) {
+        width: 8rem;
+        height: 9.5rem;
+    }
 `;
 const BookCover = styled.img`
-    position: relative;
-    width: inherit;
-    height: inherit;
+    width: 5.5rem;
+    height: 7rem;
+    @media (min-width: 890px) {
+        width: 8rem;
+        height: 9.5rem;
+    }
 `;
 
 function MyBooks() {
@@ -28,7 +45,7 @@ function MyBooks() {
 
     return (
         <Fragment>
-            <div>
+            <BookContainer>
                 <h3>My books:</h3>
                 {books ? (
                     <BooksDiv>
@@ -43,7 +60,7 @@ function MyBooks() {
                         <p>You currently don't have any books.</p>
                     </BooksDiv>
                 )}
-            </div>
+            </BookContainer>
         </Fragment>
     );
 }

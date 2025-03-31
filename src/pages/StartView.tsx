@@ -9,7 +9,12 @@ const ImgWrapper = styled.div`
 `;
 const Img = styled.img`
     width: 100vw;
-    height: 10rem;
+    height: 7rem;
+    object-fit: cover;
+    @media (min-width: 890px) {
+        width: 50vw;
+        height: 9rem;
+    }
 `;
 const AboutTitle = styled.h2`
     margin-bottom: 0;

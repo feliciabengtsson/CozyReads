@@ -10,11 +10,13 @@ const ModalContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 `;
 const ModalWrapper = styled.div`
     display: block;
     background: #F5F1E7;
     width: 70%;
+    max-width: 800px;
     height: 70%;
     padding: 1rem;
     border-radius: 1rem;

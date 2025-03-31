@@ -8,12 +8,15 @@ const Title = styled.h2`
     margin: 0;
 `;
 const BookCover = styled.div`
-    width: 40vw;
+    width: fit-content;
     margin: 20px auto;
 `;
 const CoverImg = styled.img`
     width: 40vw;
     margin: auto;
+    @media (min-width: 890px) {
+        width: 12rem;
+    }
 `;
 const Genre = styled.span`
     color: #8b5e3c;

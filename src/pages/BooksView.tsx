@@ -15,27 +15,47 @@ const Form = styled.form`
         padding: 0.5rem;
     }
 `;
+const BooksContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 890px) {
+        text-align: center;
+    }
+`;
 const BooksDiv = styled.div`
-    background-color: rgba(255, 255, 255, 0.9);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    width: auto;
+    grid-template-rows: 1fr;
+    align-self: center;
+    width: fit-content;
     height: fit-content;
-    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: .6rem;
     border-radius: 6px;
+    @media (min-width: 890px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
 `;
 const BooksCard = styled.div`
     width: 5.5rem;
     height: 7rem;
     background-color: #f5f1e7c3;
-    margin: 10px auto;
+    margin: 10px;
+    @media (min-width: 890px) {
+        width: 7.5rem;
+        height: 9.5rem;
+    }
 `;
 const BookCover = styled.img`
     width: 5.5rem;
     height: 7rem;
-    z-index: -1;
     cursor: pointer;
+    @media (min-width: 890px) {
+        width: 7.5rem;
+        height: 9.5rem;
+    }
 `;
 
 interface BookType {
@@ -105,8 +125,6 @@ function BooksView() {
                         </label>
                     </div>
                 </Form>
-            </section>
-            <section id="highlight">
                 <h3>📖 Book of the Month:</h3>
                 <p>The Invisible Library by Genevieve Cogman</p>
                 <p>
@@ -116,7 +134,7 @@ function BooksView() {
                 </p>
                 <p>💬 Discussion Starts: 25th of each month</p>
             </section>
-            <section>
+            <BooksContainer>
                 {filteredBooks.length > 0 ? (
                     <BooksDiv>
                         {filteredBooks.map((book) => (
@@ -138,7 +156,7 @@ function BooksView() {
                         ))}
                     </BooksDiv>
                 )}
-            </section>
+            </BooksContainer>
         </Fragment>
     );
 }
